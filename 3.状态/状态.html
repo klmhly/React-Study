@@ -19,6 +19,7 @@
                 date:new Date()
             }
         }
+        // 更新dom，渲染输出
         render(){
             return (
                 <div>
@@ -26,6 +27,8 @@
                 </div>
             )
         }
+
+        //生命周期钩子，组件第一次加载时运行
         componentDidMount(){
             this.timerID = setInterval(
                 () => this.tick(),

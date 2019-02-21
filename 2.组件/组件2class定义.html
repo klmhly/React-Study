@@ -12,16 +12,13 @@
 </body>
 <script type="text/babel">
     class HelloMsg extends React.Component{
-        constructor (props){
-            super(props)
-        }
         render () {
-            return <h1>hello world {props.name}</h1>
+            return <h1>hello world </h1>
         }
     }
 
     ReactDOM.render(
-        <HelloMsg name="yu"/>,
+        <HelloMsg/>,
         document.getElementById('app')
     )
 </script>
