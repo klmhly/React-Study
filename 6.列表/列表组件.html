@@ -11,6 +11,17 @@
     <div id="app"></div>
 </body>
 <script type="text/babel">
-    
+    function Lists(props) {
+        const nums = props.nums
+        const listItem = nums.map((num,index)=>
+            <li key={index}>{num*2}</li>
+        )  
+        return (<ul>{listItem}</ul>)
+    }
+    const nums = [1,2,3]
+    ReactDOM.render(
+        <Lists nums={nums}/>,
+        document.getElementById('app')
+    )
 </script>
 </html>
